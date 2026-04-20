@@ -1,0 +1,37 @@
+body { font-family: sans-serif; margin: 0; background: #f0f2f5; }
+
+.navbar { 
+    background: #2c3e50; 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 50px; 
+}
+
+.navbar ul { display: flex; list-style: none; }
+.navbar li { margin-left: 20px; }
+.navbar a { color: white; text-decoration: none; }
+
+.container { padding: 40px; }
+.stats-row { display: flex; gap: 20px; margin-bottom: 30px; }
+
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    flex: 1; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    text-align: center; 
+    font-size: 1.2rem; 
+}
+
+table { 
+    width: 100%; 
+    background: white; 
+    border-collapse: collapse; 
+    border-radius: 8px; /* Yahan error tha */
+    overflow: hidden; 
+}
+
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+th { background-color: #18bc9c; color: white; }

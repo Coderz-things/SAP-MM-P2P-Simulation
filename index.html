@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAP MM P2P Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>P2P Portal (SAP MM)</h2>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="forms/pr-form.html">PR (ME51N)</a></li>
+            <li><a href="forms/po-form.html">PO (ME21N)</a></li>
+            <li><a href="forms/migo.html">MIGO (GR)</a></li>
+            <li><a href="forms/invoice.html">MIRO (Invoice)</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Procurement Overview</h1>
+        <div class="stats-row">
+            <div class="card">Total PRs: <span id="pr-count">0</span></div>
+            <div class="card">Total POs: <span id="po-count">0</span></div>
+            <div class="card">Pending Payments: <span id="pending-count">0</span></div>
+        </div>
+        
+        <h3>Recent Activities</h3>
+        <table id="activity-table">
+            <thead>
+                <tr>
+                    <th>Document No</th>
+                    <th>Vendor</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+
+        <div style="text-align: right; margin-top: 20px;">
+            <button onclick="resetSystem()" style="background:#e74c3c; color:white; border:none; padding:10px 15px; cursor:pointer; border-radius:5px; font-weight:bold; font-size: 13px;">
+                ⚠️ Reset SAP System Data
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
