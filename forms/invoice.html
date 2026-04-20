@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>P2P Portal - Invoice Verification</h2>
+        <a href="../index.html" style="color:white; text-decoration:none;">Dashboard</a>
+    </nav>
+
+    <div class="container">
+        <h2>Invoice Verification (MIRO Simulation)</h2>
+        <div class="card">
+            <p>Enter PO Number to verify Three-Way Match (PO vs GR vs Invoice).</p>
+            <input type="text" id="miroSearch" placeholder="Enter PO Number (e.g. PO-123)" style="width:70%; padding:10px;">
+            <button onclick="verifyInvoice()" style="background:#2c3e50; color:white; padding:10px; cursor:pointer;">Check Match</button>
+        </div>
+
+        <div id="miro-details" style="display:none; margin-top:20px;" class="card">
+            <p>Ordered Quantity: <span id="p-qty" style="font-weight:bold;"></span></p>
+            <p>Received Quantity (GR): <span id="g-qty" style="font-weight:bold;"></span></p>
+            <hr>
+            <h4 id="status-msg"></h4>
+            <button id="pay-btn" onclick="postPayment()" style="display:none; background:green; color:white; padding:10px 20px; border:none; cursor:pointer; border-radius:5px;">
+                Post Payment & Close PO
+            </button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

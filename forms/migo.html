@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Goods Receipt (MIGO)</h2>
+        <div class="card">
+            <input type="text" id="searchPO" placeholder="Enter PO Number (e.g. PO-123)">
+            <button onclick="findPO()">Search PO</button>
+        </div>
+
+        <div id="gr-section" style="display:none; margin-top:20px;" class="card">
+            <h3>PO Details Found</h3>
+            <p>Vendor: <span id="v-name"></span></p>
+            <p>Ordered Qty: <span id="v-qty"></span></p>
+            <hr>
+            <label>Actual Received Qty:</label>
+            <input type="number" id="receivedQty" style="width:100%; padding:10px;"><br><br>
+            <button onclick="processGR()" style="background: #2c3e50; color: white; padding:10px;">Post Goods Receipt</button>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h3>Goods Receipt (Transaction: MIGO)</h3>
+<div class="form-container">
+    <input type="text" id="poSearch" placeholder="Enter PO Number">
+    <button onclick="fetchPODetails()">Get PO Details</button>
+    
+    <div id="grDetails" style="display:none; margin-top:20px;">
+        <p>Material: <span id="dispMat"></span></p>
+        <p>Ordered Qty: <span id="dispQty"></span></p>
+        <label>Received Qty:</label>
+        <input type="number" id="receivedQty">
+        <button onclick="postGR()">Post Goods Receipt</button>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Create Purchase Order (ME21N)</h2>
+        <form id="poForm">
+            
+            <div style="background: #f4f4f4; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px dashed #3498db;">
+                <label style="font-weight: bold; color: #3498db;">Reference PR Number:</label><br>
+                <div style="display: flex; gap: 10px; margin-top: 5px;">
+                    <input type="text" id="refPR" placeholder="e.g. PR-123" style="padding: 10px; flex-grow: 1; border: 1px solid #ccc; border-radius: 4px;">
+                    <button type="button" onclick="fetchPRData()" style="background: #3498db; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 4px;">
+                        Fetch PR Info
+                    </button>
+                </div>
+                <p id="pr-status" style="font-size: 12px; margin-top: 5px; color: #666;">Linking a PR helps track internal requests.</p>
+            </div>
+
+            <label>Vendor:</label><br>
+            <select id="vendor" style="padding: 10px; width: 100%;">
+                <option>ABC Corp</option>
+                <option>XYZ Logistics</option>
+            </select><br><br>
+
+            <label>Quantity:</label><br>
+            <input type="number" id="qty" style="padding: 10px; width: 95%;"><br><br>
+
+            <button type="button" onclick="savePO()" style="background: #18bc9c; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; width: 100%; font-weight: bold;">
+                Save PO
+            </button>
+        </form>
+    </div>
+
+    <script src="../script.js"></script> 
+</body>
+</html>
