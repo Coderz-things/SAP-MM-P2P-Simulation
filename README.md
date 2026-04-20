@@ -1,4 +1,5 @@
 # SAP-MM-P2P-Simulation
+Here project link : https://coderz-things.github.io/SAP-MM-P2P-Simulation/
 📌 Project OverviewThis project is a web-based high-fidelity simulation of the Procure-to-Pay (P2P) life cycle, commonly managed within the SAP Materials Management (MM) module. It bridges the gap between theoretical supply chain concepts and practical ERP execution by providing a real-time link between internal requisitions and financial verification.The application allows users to experience the complete procurement journey: from identifying a need (PR) to a legally binding order (PO), physical goods receipt (MIGO), and finally, financial settlement (MIRO).
 
  Tech StackFrontend: HTML5 & CSS3 (Fiori-inspired UI/UX).Logic Engine: JavaScript ES6 (Procurement state management & validation).Data Persistence: LocalStorage (Ensures data integrity across browser sessions).Icons: FontAwesome 6.0.
